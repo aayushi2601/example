@@ -4,6 +4,7 @@
    extract($_POST);
    $flag=true;
    $message='';
+   
   
    if(trim($uname)==''){
         $flag=false;
