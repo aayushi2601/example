@@ -36,6 +36,11 @@
                 <label class="js-form-required form-required">E-mail</label>
                 <div class="input"><input type="email" name="email" id="email" value="<?php echo $email; ?>"></div>
             </div>
+            <div class="group">
+                <label class="js-form-required form-required">Gender</label>
+                <div class="input"><input type="radio" name="gender" id="gender" value="Male"> Male</div>
+                 <div class="input"><input type="radio" name="gender" id="gender" value="Female">Female</div>
+            </div>
             <div class="group">               
                 <div class="input"><input type="submit" name="submit" id="submit" value="SUBMIT"></div>
             </div>
