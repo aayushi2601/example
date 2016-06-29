@@ -53,8 +53,8 @@ $num_rows = mysql_num_rows($result);
        $message .='<li>Username already exists</li>';
    }
         if($flag){  
-        $md5password =  md5($password);    
-        $querystring= "Insert INTO `user` (`uname`,`password`,`fname`,`lname`,`email`) VALUES ('$uname','$md5password','$fname','$lname','$email')";
+        $md5password =  md5($password);
+        $querystring= "Insert INTO `user` (`uname`,`password`,`fname`,`lname`,`email`,`gender`) VALUES ('$uname','$md5password','$fname','$lname','$email','$gender')";
         if(mysql_query($querystring)){
              header("location:index.php?front=message");
            
