@@ -10,6 +10,7 @@
         </div>
          <div id="menu">
              <ul >
+                 
                 <li><a href="/">Home</a></li>
                 <?php if(!isset($_SESSION['userId'])): ?>
                 <li><a href="/reg.php">Registration</a></li>

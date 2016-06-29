@@ -8,8 +8,9 @@
       $myusername = trim($_POST['uname']);
       $mypassword = md5(trim($_POST['password'])); 
       
-      $res=mysql_query("SELECT id,password,uname FROM `user` WHERE `uname`='$myusername'") ;
+      $res=mysql_query("SELECT id,password,uname,fname,lname,email,gender FROM `user` WHERE `uname`='$myusername'") ;
             $row2=mysql_fetch_object($res);
+            
             
              if(!isset($row2->id)){
                 $message.='<li> Username does not exist</li>';
@@ -27,7 +28,15 @@
                      
                      $_SESSION['userId']=$row2->id;
                      $_SESSION['uname']=$row2->uname;
-                        header("location: index.php");
+                     $_SESSION['fname']=$row2->fname;
+                     $_SESSION['lname']=$row2->lname;
+                     $_SESSION['email']=$row2->email;
+                     $_SESSION['password']=trim($_POST['password']);
+                     $_SESSION['gender']=$row2->gender;
+                            
+                     
+                     
+                     header("location: index.php");
       
       
                      
