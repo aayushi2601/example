@@ -38,13 +38,13 @@
             </div>
             <div class="group">
                 <label class="js-form-required form-required">Gender</label>
-                <div class="input"><input type="radio" name="gender" id="gender" value="Male"> Male</div>
+                <div class="input"><input type="radio" name="gender" id="gender" value="Male" checked> Male</div>
                  <div class="input"><input type="radio" name="gender" id="gender" value="Female">Female</div>
+                 <div class="input"><input type="radio" name="gender" id="gender" value="Other">Others</div>
             </div>
             <div class="group">               
                 <div class="input"><input type="submit" name="submit" id="submit" value="SUBMIT"></div>
             </div>
-          
             <br>
             
         </div>

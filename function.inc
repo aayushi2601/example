@@ -41,7 +41,7 @@
    if(trim($email)==''){
         $flag=false;
         $message .='<li>E-mail id required</li>';
-        
+    
    }
 $sql    = "select * from  `user` where `uname` like '$uname'";
 $result = mysql_query($sql, $link);
@@ -54,9 +54,11 @@ $num_rows = mysql_num_rows($result);
    }
         if($flag){  
         $md5password =  md5($password);
+        
         $querystring= "Insert INTO `user` (`uname`,`password`,`fname`,`lname`,`email`,`gender`) VALUES ('$uname','$md5password','$fname','$lname','$email','$gender')";
         if(mysql_query($querystring)){
              header("location:index.php?front=message");
+             
            
         }}
  }
