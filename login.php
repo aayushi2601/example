@@ -3,6 +3,11 @@
 <div id="section">
     <h1>LOGIN</h1>
     <div id="register">
+        <?php if($message!=""): ?>            
+                <ul class='message'>
+                <?php echo $message; ?> 
+               </ul>                
+            <?php endif; ?>
         <form autocomplete="off" action="" method="post">
             <div class="group">
                 <label class="js-form-required form-required">Username</label>
