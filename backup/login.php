@@ -1,5 +1,4 @@
-<?php include_once 'connect.inc'; ?>
-<?php include_once 'loginfunctions.inc'; ?>
+<?php include_once('login1.inc');?>
 <?php include_once('header.inc'); ?>
 <div id="section">
     <h1>LOGIN</h1>
